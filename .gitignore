@@ -34,7 +34,6 @@ yarn-error.log*
 .vercel
 
 # firebase
-fire-config.js
 .firebase/*
 firebase*
 .firebase*
