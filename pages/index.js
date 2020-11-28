@@ -3,10 +3,8 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import fire from '../config/fire-config';
-import CreatePost from '../components/CreatePost';
 import Card from '../components/card';
 import Hero from '../components/hero';
-import Link from 'next/link';
 import styles from '../styles/Home.module.scss';
 
 
