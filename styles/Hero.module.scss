@@ -1,0 +1,42 @@
+
+
+.hero {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-signup {
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-signup {
+        top: 90%;
+    }
+}
+
+.title {
+    text-align: left;
+    position: absolute;
+    top: -3%;
+    left: 7%;
+    color: white;
+    font-size: 2em;
+}
+
+@media screen and (min-width: 46.875em) {
+    .title {
+        font-size: 3rem;
+    }
+}
