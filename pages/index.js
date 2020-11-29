@@ -23,7 +23,7 @@ const Home = (props) => {
             });
     }, []);
     
-    console.log(blogs);
+    //console.log(blogs);
 
     const scrollTop = () =>{
         window.scrollTo({top: 0, behavior: 'smooth'});
@@ -33,7 +33,7 @@ const Home = (props) => {
         <div>
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <title>Blog App</title>
+                <title>Explorers Wanted - Dinos on Mars</title>
             </Head>
             {/* <h1>Blog</h1>
             <CreatePost />
