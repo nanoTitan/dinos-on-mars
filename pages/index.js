@@ -5,6 +5,7 @@ import Head from 'next/head';
 import fire from '../config/fire-config';
 import Card from '../components/card';
 import Hero from '../components/hero';
+import Header from '../components/header';
 import styles from '../styles/Home.module.scss';
 
 
@@ -59,10 +60,11 @@ const Home = (props) => {
             <script src="/__/firebase/8.1.1/firebase-firestore.js"></script>
             
             <div className="page-container">
+                <Header />
                 <Hero image="dino-rider.jpg" />
-                <div className={styles["text-section"]}>
-                    <h2 className={styles["section-subtitle"]}>What is Dinos on Mars?</h2>
-                    <p className={styles["section-text"]}>Dinos on Mars is an interactive application for VR and websites that allows anyone to access the best of museums, aquariums and science exhibits.</p>
+                <div className={[styles["text-section"], styles["text-section--whatis"]].join(' ')}>
+                    <h2 className={styles["section-subtitle"]}>Dinos on What?</h2>
+                    <p className={styles["section-text"]}>Dinos on Mars is a wonderful interactive application for VR and websites that allows anyone access to the best of museums, aquariums and science exhibits. Ride with us on a jaw-dropping experience that makes education feel magical through exploration and adventure.</p>
                 </div>
                 <div className={styles["image-section"]}>
                     <img src="blue-fur-raptor.jpg" />
@@ -73,16 +75,16 @@ const Home = (props) => {
                 </div>
                 <div className={styles['card-group']}>
                     <Card
-                        title="Lorem Ipsum"
-                        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar ante nunc, in dictum sapien hendrerit nec. Etiam id scelerisque lectus, et faucibus purus."
+                        title="Life-like experiences"
+                        body="Experience exhibits up close and personal. See triceratops grazing or hear the roar from a T-Rex. To get a more realistic experience, you'd need a time machine."
                         image="blue-fur-raptor.jpg" />
                     <Card 
-                        title="Lorem Ipsum"
-                        body="Duis venenatis mollis vehicula. Sed bibendum magna id neque molestie, sit amet pretium nisl sollicitudin. Sed laoreet tincidunt sem non pellentesque. Etiam sed interdum sem. "
+                        title="Interactive biology"
+                        body="Skeletons are just a piece of the puzzle. Now you can see muscles, skin and historical holograms all in one place."
                         image="blue-fur-raptor.jpg" />
                     <Card 
-                        title="Lorem Ipsum"
-                        body="Nullam accumsan condimentum venenatis. Morbi non nisi ut purus volutpat suscipit. Mauris pulvinar nisi dui, lacinia fringilla velit gravida at."
+                        title="Avoid the hassle"
+                        body="Planning trips is expensive and time consuming. In addition, recent events of COVID-19 make being in crowds uncomfortable. Now you can take the worry and cost out of learning."
                         image="blue-fur-raptor.jpg" />
                 </div>
                 <div className={styles["text-section"]}>

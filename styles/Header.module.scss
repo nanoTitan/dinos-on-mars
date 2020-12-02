@@ -1,0 +1,49 @@
+
+
+.header {
+
+}
+
+.desktop-header {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+}
+
+.mobile-header {
+    display: flex;
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.title {
+    text-align: left;
+    color: white;
+    font-size: 1.9em;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+    //text-shadow: 2px 2px rgba(0.1, 0.1, 0.1, 0.3);
+    margin: 0 0 0 20px;
+}
+
+.header-logo {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 46.875em) {
+    .mobile-header {
+        display: none;
+    }
+
+    .title {
+        margin: 0 0 0 100px;
+    }
+}
+
+@media screen and (max-width: 46.875em) {
+    .desktop-header {
+        display: none;
+    }
+}

@@ -47,7 +47,7 @@ const Signup = (props) => {
                         <React.Fragment>
                             <label htmlFor="email">{'Email'}</label>
                             <input type="email" id="email" placeholder="Enter your email address" ref={emailInputEl}></input>
-                            <button type="submit">Join Launch List</button>
+                            <button type="submit">Join the Launch</button>
                         </React.Fragment> : null
                     }
                     <div>
