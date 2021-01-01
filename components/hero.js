@@ -11,7 +11,6 @@ const Hero = (props) => {
 
     return (
         <div className={styles.hero}>
-            
             <h2 className={styles.subtitle}><div>Sensational science</div>Breathtaking virtual reality</h2>
             <div className={`${styles['hero-signup']} ${formatStyles["col-9"]} ${formatStyles["col-s-9"]}}`}>
                 <Signup />

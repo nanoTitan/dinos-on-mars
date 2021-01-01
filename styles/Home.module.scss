@@ -35,6 +35,12 @@
   align-items: center;
 }
 
+.logo {
+    position: absolute;
+    left: 10px;
+    top: -50px;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -84,7 +90,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 4em 0 0 0;
+    margin: 0;
+    border-top: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
 }
 
 .card h3 {
@@ -96,10 +104,6 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
 }
 
 @media (max-width: 600px) {
@@ -119,11 +123,10 @@
 }
 
 .text-section--whatis {
-    padding: 0 2em;
-    margin: 1em;
+    padding: 2em;
 }
 
-.section-subtitle {
+.section-title, .section-subtitle {
     -webkit-font-kerning: normal;
     font-kerning: normal;
     font-variant-ligatures: common-ligatures contextual discretionary-ligatures;
@@ -136,7 +139,7 @@
     font-size: 1.5em;
     line-height: 1.3333333333;
     font-weight: 400;
-    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;    
 }
 
 .section-text {
@@ -164,17 +167,34 @@
     .text-section {
         padding-top: 0.5em;
     }
+
+    .card-group {
+        padding: 2em 0;
+    }
 }
 
 @media screen and (min-width: 67.5em) {
-    .section-subtitle {
-        font-size: 2.25em;
+    .section-title {
+        font-size: 3rem;
         margin-bottom: 0.5em;
     }
 
+    .section-subtitle {
+        font-size: 1.75em;
+        margin-bottom: 0.5em;
+    }
+
+    .text-section {
+        padding: 3em 10em;
+    }
+
     .section-text {
-        font-size: 1.25em;
-        width: 55%;
+        font-size: 1.5em;
+        width: 70%;
+    }
+
+    .card-group {
+        padding: 2em 0;
     }
 }
 
@@ -187,20 +207,53 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     //grid-template-rows: repeat(1, minmax(100px, 1fr));
-    grid-gap: 1em;
-    align-items: start;
+    grid-gap: 0;
+    align-items: center;
     justify-items: center;
-    margin: 6em 0 0 0;
-    padding: 0 2em;
+    margin: 0 0 0 0;
+    padding: 0 2em; 
+    border-top: 5px solid lightgray;
+}
+
+.desktop-reverse-direction {
+    direction: ltr;
 }
 
 .image-section > img {
     width: 100%;
+    border-radius: 10px;
+}
+
+.image-section div {
+    text-align: center;
 }
 
 @media screen and (min-width: 46.875em) {
     .image-section {
-        grid-gap: 8em;
+        grid-template-rows: repeat(1, minmax(100px, 1fr));
+        grid-template-columns: none;
+        grid-gap: 16px;
+        padding: 2em 4em;
+    }
+}
+
+@media screen and (min-width: 67.5em) {
+    .image-section {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 16px;
+        padding: 2em 20em;
+    }
+
+    .image-section > img {
+        object-fit: cover;
+        height: 480px;
+        width: -webkit-fill-available;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .desktop-reverse-direction {
+        direction: rtl;
     }
 }
 
