@@ -33,6 +33,24 @@ const Home = (props) => {
     return (
         <div>
             <Head>
+                {/* Global site tag (gtag.js) - Google Analytics */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2WNJPPHYF" ></script>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            <!-- Global site tag (gtag.js) - Google Analytics -->
+                            <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2WNJPPHYF"></script>
+                            <script>
+                                window.dataLayer = window.dataLayer || [];
+                                function gtag(){dataLayer.push(arguments);}
+                                gtag('js', new Date());
+                    
+                                gtag('config', 'G-Z2WNJPPHYF');
+                            </script>
+                        `,
+                    }}
+                />
+            
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Explorers Wanted - Dinos on Mars</title>
             </Head>
